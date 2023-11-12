@@ -7,6 +7,10 @@ import java.util.List;
 
 public interface AnimalService {
 
-    AnimalResponse getAnimal();
+    AnimalResponse getAnimal(int id);
+    List<AnimalResponse> getAllAnimal();
+    AnimalResponse addAnimal(AnimalRequest animalRequest);
+    boolean deleteAnimal(int id);
+
 
 }
